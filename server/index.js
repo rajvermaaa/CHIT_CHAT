@@ -32,6 +32,8 @@ app.use("/api/messages", messageRoutes);
 const server = app.listen(process.env.PORT, () =>
   console.log(`Server started on ${process.env.PORT}`)
 );
+// https://chit-chat-indol.vercel.app/login
+// "http://localhost:3000",
 const io = socket(server, {
   cors: {
     origin: "https://chit-chat-indol.vercel.app/login",
